@@ -32,24 +32,58 @@ body{
     height: 100%;
 }
 
-.title h1 a {
+.title h3,
+.title h4{
+    text-align: center;
+}
+
+.title h4 a {
     text-decoration: none;
 }
 
-.title h1 a:nth-child(1){
+.title h4 .one{
     color: orangered;
     background-color: white;
     border-bottom-left-radius: 20px;
     border-top-left-radius: 20px;
     padding-left: 20px;
+    font-size: 40px;
 }
 
-.title h1 a:nth-child(2){
+.title h4 .two{
     color: white;
     background-color: orangered;
     border-bottom-right-radius: 20px;
     border-top-right-radius: 20px;
     padding-right: 20px;
+    font-size: 40px;
+}
+
+.links a{
+    color: orangered;
+    transition: 4s ease-in-out;
+}
+
+.links a:hover{
+    animation: color 4s ease-in-out infinite;
+}
+
+@keyframes color{
+    0%{
+        color: royalblue;
+    }
+    25%{
+        color: white;
+    }
+    50%{
+        color: black;
+    }
+    75%{
+        color: aqua;
+    }
+    100%{
+        color: chocolate;
+    }
 }
 
 .clock{
