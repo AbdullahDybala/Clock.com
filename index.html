@@ -4,10 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/jpg" sizes="32x32" href="./Clock-Icon.jpg">
     <link rel="stylesheet" href="styles.css">
     <title>Clock</title>
 </head>
 <body>
+    <div class="container">
+        <div class="title">
+            <h3>Proudly Presented By</h3>
+            <h1><a href="#">Abdu</a><a href="#">llah</a></h1>
+        </div>
+    </div>
     <div class="container">
         <div class="clock">
             <div class="hand hour" data-hour-hand></div>
@@ -27,11 +34,14 @@
             <div class="number number12">12</div>
         </div>
     </div>
+    <div class="container">
+        <img src="./My-Pic.png" alt="My-Pic">
+    </div>
 
     <script defer src="./main.js"></script>
     <script type="text/javascript" src="vanilla-tilt.js"></script>
     <script type="text/javascript">
-        VanillaTilt.init(document.querySelector(".container"), {
+        VanillaTilt.init(document.querySelectorAll(".container"), {
             max: 25,
             speed: 400
         });
