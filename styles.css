@@ -9,7 +9,7 @@ body{
     justify-content: space-around;
     align-items: center;
     min-height: 100vh;
-    overflow: hidden;
+    flex-wrap: wrap;
 }
 
 .container{
